@@ -3,7 +3,7 @@ package integration
 import (
 	"testing"
 
-	"github.com/caddyserver/caddy/v2/caddytest"
+	"github.com/uptimerobot/caddy/v2/caddytest"
 )
 
 func TestDefaultSNI(t *testing.T) {
@@ -106,7 +106,7 @@ func TestDefaultSNIWithNamedHostAndExplicitIP(t *testing.T) {
 
 	// arrange
 	tester := caddytest.NewTester(t)
-	tester.InitServer(` 
+	tester.InitServer(`
   {
     "apps": {
       "http": {
@@ -206,7 +206,7 @@ func TestDefaultSNIWithNamedHostAndExplicitIP(t *testing.T) {
 func TestDefaultSNIWithPortMappingOnly(t *testing.T) {
 	// arrange
 	tester := caddytest.NewTester(t)
-	tester.InitServer(` 
+	tester.InitServer(`
   {
     "apps": {
       "http": {

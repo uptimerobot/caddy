@@ -5,23 +5,23 @@ import (
 	"net/url"
 	"testing"
 
-	"github.com/caddyserver/caddy/v2/caddytest"
+	"github.com/uptimerobot/caddy/v2/caddytest"
 )
 
 func TestRespond(t *testing.T) {
 
 	// arrange
 	tester := caddytest.NewTester(t)
-	tester.InitServer(` 
+	tester.InitServer(`
   {
     http_port     9080
     https_port    9443
   }
-  
+
   localhost:9080 {
     respond /version 200 {
       body "hello from localhost"
-    }	
+    }
     }
   `, "caddyfile")
 
@@ -38,14 +38,14 @@ func TestRedirect(t *testing.T) {
     http_port     9080
     https_port    9443
   }
-  
+
   localhost:9080 {
-    
+
     redir / http://localhost:9080/hello 301
-    
+
     respond /hello 200 {
       body "hello from localhost"
-    }	
+    }
     }
   `, "caddyfile")
 
@@ -63,8 +63,8 @@ func TestDuplicateHosts(t *testing.T) {
 		`
     localhost:9080 {
     }
-  
-    localhost:9080 { 
+
+    localhost:9080 {
     }
     `,
 		"caddyfile",
@@ -82,12 +82,12 @@ func TestReadCookie(t *testing.T) {
 	// arrange
 	tester := caddytest.NewTester(t)
 	tester.Client.Jar.SetCookies(localhost, []*http.Cookie{&cookie})
-	tester.InitServer(` 
+	tester.InitServer(`
   {
     http_port     9080
     https_port    9443
   }
-  
+
   localhost:9080 {
     templates {
       root testdata

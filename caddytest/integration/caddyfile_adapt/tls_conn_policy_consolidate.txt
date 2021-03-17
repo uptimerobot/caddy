@@ -1,4 +1,4 @@
-# https://github.com/caddyserver/caddy/issues/3906
+# https://github.com/uptimerobot/caddy/issues/3906
 a.a {
 	tls internal
 	respond 403

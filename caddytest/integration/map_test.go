@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/caddyserver/caddy/v2/caddytest"
+	"github.com/uptimerobot/caddy/v2/caddytest"
 )
 
 func TestMap(t *testing.T) {
@@ -25,7 +25,7 @@ func TestMap(t *testing.T) {
 
 		respond /version 200 {
 			body "hello from localhost {dest-1} {dest-2}"
-		}	
+		}
 	}
 	`, "caddyfile")
 
@@ -41,17 +41,17 @@ func TestMapRespondWithDefault(t *testing.T) {
 		http_port     9080
 		https_port    9443
 		}
-		
+
 		localhost:9080 {
-	
+
 			map {http.request.method} {dest-name} {
 				default unknown
 				GET     get-called
 			}
-		
+
 			respond /version 200 {
 				body "hello from localhost {dest-name}"
-			}	
+			}
 		}
 	`, "caddyfile")
 

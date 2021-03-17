@@ -23,7 +23,7 @@ Other menu items:
 
 ### Contributing code
 
-You can have a huge impact on the project by helping with its code. To contribute code to Caddy, first submit or comment in an issue to discuss your contribution, then open a [pull request](https://github.com/caddyserver/caddy/pulls) (PR). If you're new to our community, that's okay: **we gladly welcome pull requests from anyone, regardless of your native language or coding experience.** You can get familiar with Caddy's code base by using [code search at Sourcegraph](https://sourcegraph.com/github.com/caddyserver/caddy).
+You can have a huge impact on the project by helping with its code. To contribute code to Caddy, first submit or comment in an issue to discuss your contribution, then open a [pull request](https://github.com/uptimerobot/caddy/pulls) (PR). If you're new to our community, that's okay: **we gladly welcome pull requests from anyone, regardless of your native language or coding experience.** You can get familiar with Caddy's code base by using [code search at Sourcegraph](https://sourcegraph.com/github.com/caddyserver/caddy).
 
 We hold contributions to a high standard for quality :bowtie:, so don't be surprised if we ask for revisions&mdash;even if it seems small or insignificant. Please don't take it personally. :blue_heart: If your change is on the right track, we can guide you to make it mergable.
 
@@ -64,7 +64,7 @@ Contributing to Go projects on GitHub is fun and easy. After you have proposed y
 
 5. Push your changes to your fork: `git push myfork`
 
-6. [Create a pull request](https://github.com/caddyserver/caddy/pull/new/master) to merge your changes into caddyserver/caddy @ master. (Click "compare across forks" and change the head fork.)
+6. [Create a pull request](https://github.com/uptimerobot/caddy/pull/new/master) to merge your changes into caddyserver/caddy @ master. (Click "compare across forks" and change the head fork.)
 
 This workflow is nice because you don't have to change import paths. You can get fancier by using different branches if you want.
 
@@ -85,7 +85,7 @@ Many people on the forums could benefit from your experience and expertise, too.
 
 ### Reporting bugs
 
-Like every software, Caddy has its flaws. If you find one, [search the issues](https://github.com/caddyserver/caddy/issues) to see if it has already been reported. If not, [open a new issue](https://github.com/caddyserver/caddy/issues/new) and describe the bug, and somebody will look into it! (This repository is only for Caddy and its standard modules.)
+Like every software, Caddy has its flaws. If you find one, [search the issues](https://github.com/uptimerobot/caddy/issues) to see if it has already been reported. If not, [open a new issue](https://github.com/uptimerobot/caddy/issues/new) and describe the bug, and somebody will look into it! (This repository is only for Caddy and its standard modules.)
 
 **You can help us fix bugs!** Speed up the patch by identifying the bug in the code. This can sometimes be done by adding `fmt.Println()` statements (or similar) in relevant code paths to narrow down where the problem may be. It's a good way to [introduce yourself to the Go language](https://tour.golang.org), too.
 
@@ -124,7 +124,7 @@ The maintainer is usually able to do the rest; but of course the reporter may in
 
 ### Suggesting features
 
-First, [search to see if your feature has already been requested](https://github.com/caddyserver/caddy/issues). If it has, you can add a :+1: reaction to vote for it. If your feature idea is new, open an issue to request the feature. Please describe your idea thoroughly so that we know how to implement it! Really vague requests may not be helpful or actionable and, without clarification, will have to be closed.
+First, [search to see if your feature has already been requested](https://github.com/uptimerobot/caddy/issues). If it has, you can add a :+1: reaction to vote for it. If your feature idea is new, open an issue to request the feature. Please describe your idea thoroughly so that we know how to implement it! Really vague requests may not be helpful or actionable and, without clarification, will have to be closed.
 
 While we really do value your requests and implement many of them, not all features are a good fit for Caddy. Most of those [make good modules](#writing-a-caddy-module), which can be made by anyone! But if a feature is not in the best interest of the Caddy project or its users in general, we may politely decline to implement it into Caddy core. Additionally, some features are bad ideas altogether (for either obvious or non-obvious reasons) which may be rejected. We'll try to explain why we reject a feature, but sometimes the best we can do is, "It's not a good fit for the project."
 
@@ -179,7 +179,7 @@ Collaborators have push rights to the repository. We grant this permission after
 
 ## Security Policy
 
-If you think you've found a security vulnerability, please refer to our [Security Policy](https://github.com/caddyserver/caddy/security/policy) document.
+If you think you've found a security vulnerability, please refer to our [Security Policy](https://github.com/uptimerobot/caddy/security/policy) document.
 
 
 ## Thank you

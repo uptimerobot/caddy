@@ -724,4 +724,4 @@ var (
 )
 
 // ImportPath is the package import path for Caddy core.
-const ImportPath = "github.com/caddyserver/caddy/v2"
+const ImportPath = "github.com/uptimerobot/caddy/v2"

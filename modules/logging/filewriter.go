@@ -22,8 +22,8 @@ import (
 	"path/filepath"
 	"strconv"
 
-	"github.com/caddyserver/caddy/v2"
-	"github.com/caddyserver/caddy/v2/caddyconfig/caddyfile"
+	"github.com/uptimerobot/caddy/v2"
+	"github.com/uptimerobot/caddy/v2/caddyconfig/caddyfile"
 	"github.com/dustin/go-humanize"
 	"gopkg.in/natefinch/lumberjack.v2"
 )
