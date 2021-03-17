@@ -19,7 +19,7 @@ import (
 	"crypto/x509"
 	"fmt"
 
-	"github.com/caddyserver/certmagic"
+	"github.com/uptimerobot/certmagic"
 	"github.com/klauspost/cpuid/v2"
 )
 

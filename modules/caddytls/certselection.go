@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/caddyserver/certmagic"
+	"github.com/uptimerobot/certmagic"
 )
 
 // CustomCertSelectionPolicy represents a policy for selecting the certificate

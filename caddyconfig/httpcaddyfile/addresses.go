@@ -26,7 +26,7 @@ import (
 	"github.com/caddyserver/caddy/v2"
 	"github.com/caddyserver/caddy/v2/caddyconfig/caddyfile"
 	"github.com/caddyserver/caddy/v2/modules/caddyhttp"
-	"github.com/caddyserver/certmagic"
+	"github.com/uptimerobot/certmagic"
 )
 
 // mapAddressToServerBlocks returns a map of listener address to list of server

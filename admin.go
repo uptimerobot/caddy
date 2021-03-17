@@ -39,7 +39,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/caddyserver/certmagic"
+	"github.com/uptimerobot/certmagic"
 	"github.com/prometheus/client_golang/prometheus"
 	"go.uber.org/zap"
 )

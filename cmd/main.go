@@ -33,7 +33,7 @@ import (
 
 	"github.com/caddyserver/caddy/v2"
 	"github.com/caddyserver/caddy/v2/caddyconfig"
-	"github.com/caddyserver/certmagic"
+	"github.com/uptimerobot/certmagic"
 	"go.uber.org/zap"
 )
 

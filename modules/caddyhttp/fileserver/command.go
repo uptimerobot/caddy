@@ -26,7 +26,7 @@ import (
 	caddycmd "github.com/caddyserver/caddy/v2/cmd"
 	"github.com/caddyserver/caddy/v2/modules/caddyhttp"
 	caddytpl "github.com/caddyserver/caddy/v2/modules/caddyhttp/templates"
-	"github.com/caddyserver/certmagic"
+	"github.com/uptimerobot/certmagic"
 )
 
 func init() {

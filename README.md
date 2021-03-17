@@ -40,7 +40,7 @@
 <p align="center">
 	<b>Powered by</b>
 	<br>
-	<a href="https://github.com/caddyserver/certmagic"><img src="https://user-images.githubusercontent.com/1128849/49704830-49d37200-fbd5-11e8-8385-767e0cd033c3.png" alt="CertMagic" width="250"></a>
+	<a href="https://github.com/uptimerobot/certmagic"><img src="https://user-images.githubusercontent.com/1128849/49704830-49d37200-fbd5-11e8-8385-767e0cd033c3.png" alt="CertMagic" width="250"></a>
 </p>
 
 
@@ -78,7 +78,7 @@ Requirements:
 - [Go 1.15 or newer](https://golang.org/dl/)
 
 ### For development
- 
+
 _**Note:** These steps [will not embed proper version information](https://github.com/golang/go/issues/29228). For that, please follow the instructions in the next section._
 
 ```bash

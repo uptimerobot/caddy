@@ -32,7 +32,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/caddyserver/certmagic"
+	"github.com/uptimerobot/certmagic"
 	"go.uber.org/zap"
 )
 
