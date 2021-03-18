@@ -23,9 +23,9 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/caddyserver/caddy/v2"
-	"github.com/caddyserver/caddy/v2/caddyconfig"
-	"github.com/caddyserver/caddy/v2/caddyconfig/caddyfile"
+	"github.com/uptimerobot/caddy/v2"
+	"github.com/uptimerobot/caddy/v2/caddyconfig"
+	"github.com/uptimerobot/caddy/v2/caddyconfig/caddyfile"
 	"github.com/uptimerobot/certmagic"
 	"github.com/mholt/acmez"
 	"github.com/mholt/acmez/acme"

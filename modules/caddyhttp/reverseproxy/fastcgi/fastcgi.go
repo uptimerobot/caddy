@@ -26,12 +26,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/caddyserver/caddy/v2/modules/caddyhttp"
-	"github.com/caddyserver/caddy/v2/modules/caddyhttp/reverseproxy"
-	"github.com/caddyserver/caddy/v2/modules/caddytls"
+	"github.com/uptimerobot/caddy/v2/modules/caddyhttp"
+	"github.com/uptimerobot/caddy/v2/modules/caddyhttp/reverseproxy"
+	"github.com/uptimerobot/caddy/v2/modules/caddytls"
 	"go.uber.org/zap"
 
-	"github.com/caddyserver/caddy/v2"
+	"github.com/uptimerobot/caddy/v2"
 )
 
 func init() {
@@ -210,7 +210,7 @@ func (t Transport) buildEnv(r *http.Request) (map[string]string, error) {
 
 	// Try to grab the path remainder from a file matcher
 	// if we didn't get a split result here.
-	// See https://github.com/caddyserver/caddy/issues/3718
+	// See https://github.com/uptimerobot/caddy/issues/3718
 	if pathInfo == "" {
 		if remainder, ok := repl.GetString("http.matchers.file.remainder"); ok {
 			pathInfo = remainder

@@ -31,8 +31,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/caddyserver/caddy/v2"
-	"github.com/caddyserver/caddy/v2/caddyconfig"
+	"github.com/uptimerobot/caddy/v2"
+	"github.com/uptimerobot/caddy/v2/caddyconfig"
 	"github.com/uptimerobot/certmagic"
 	"go.uber.org/zap"
 )

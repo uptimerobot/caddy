@@ -17,7 +17,7 @@ package caddytls
 import (
 	"crypto/tls"
 
-	"github.com/caddyserver/caddy/v2"
+	"github.com/uptimerobot/caddy/v2"
 	"github.com/uptimerobot/certmagic"
 )
 

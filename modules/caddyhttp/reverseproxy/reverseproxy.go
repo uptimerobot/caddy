@@ -29,9 +29,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/caddyserver/caddy/v2"
-	"github.com/caddyserver/caddy/v2/modules/caddyhttp"
-	"github.com/caddyserver/caddy/v2/modules/caddyhttp/headers"
+	"github.com/uptimerobot/caddy/v2"
+	"github.com/uptimerobot/caddy/v2/modules/caddyhttp"
+	"github.com/uptimerobot/caddy/v2/modules/caddyhttp/headers"
 	"go.uber.org/zap"
 	"golang.org/x/net/http/httpguts"
 )
@@ -81,7 +81,7 @@ type Handler struct {
 	// Adjusts how often to flush the response buffer. A
 	// negative value disables response buffering.
 	// TODO: figure out good defaults and write docs for this
-	// (see https://github.com/caddyserver/caddy/issues/1460)
+	// (see https://github.com/uptimerobot/caddy/issues/1460)
 	FlushInterval caddy.Duration `json:"flush_interval,omitempty"`
 
 	// Headers manipulates headers between Caddy and the backend.
@@ -324,7 +324,7 @@ func (h *Handler) Provision(ctx caddy.Context) error {
 
 // Cleanup cleans up the resources made by h during provisioning.
 func (h *Handler) Cleanup() error {
-	// TODO: Close keepalive connections on reload? https://github.com/caddyserver/caddy/pull/2507/files#diff-70219fd88fe3f36834f474ce6537ed26R762
+	// TODO: Close keepalive connections on reload? https://github.com/uptimerobot/caddy/pull/2507/files#diff-70219fd88fe3f36834f474ce6537ed26R762
 
 	// remove hosts from our config from the pool
 	for _, upstream := range h.Upstreams {
@@ -654,7 +654,7 @@ func (h *Handler) reverseProxy(rw http.ResponseWriter, req *http.Request, repl *
 
 	// some apps need the response headers before starting to stream content with http2,
 	// so it's important to explicitly flush the headers to the client before streaming the data.
-	// (see https://github.com/caddyserver/caddy/issues/3556 for use case and nuances)
+	// (see https://github.com/uptimerobot/caddy/issues/3556 for use case and nuances)
 	if h.isBidirectionalStream(req, res) {
 		if wf, ok := rw.(http.Flusher); ok {
 			wf.Flush()

@@ -23,8 +23,8 @@ import (
 	"os"
 	"os/signal"
 
-	"github.com/caddyserver/caddy/v2"
-	caddycmd "github.com/caddyserver/caddy/v2/cmd"
+	"github.com/uptimerobot/caddy/v2"
+	caddycmd "github.com/uptimerobot/caddy/v2/cmd"
 	"golang.org/x/crypto/ssh/terminal"
 )
 

@@ -23,7 +23,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/caddyserver/caddy/v2"
+	"github.com/uptimerobot/caddy/v2"
 	"github.com/dustin/go-humanize"
 )
 

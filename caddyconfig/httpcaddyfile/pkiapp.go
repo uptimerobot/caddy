@@ -15,8 +15,8 @@
 package httpcaddyfile
 
 import (
-	"github.com/caddyserver/caddy/v2/caddyconfig"
-	"github.com/caddyserver/caddy/v2/modules/caddypki"
+	"github.com/uptimerobot/caddy/v2/caddyconfig"
+	"github.com/uptimerobot/caddy/v2/modules/caddypki"
 )
 
 func (st ServerType) buildPKIApp(

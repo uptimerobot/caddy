@@ -23,7 +23,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/caddyserver/caddy/v2"
+	"github.com/uptimerobot/caddy/v2"
 )
 
 func TestHostMatcher(t *testing.T) {

@@ -17,10 +17,10 @@ package httpcaddyfile
 import (
 	"strconv"
 
-	"github.com/caddyserver/caddy/v2"
-	"github.com/caddyserver/caddy/v2/caddyconfig"
-	"github.com/caddyserver/caddy/v2/caddyconfig/caddyfile"
-	"github.com/caddyserver/caddy/v2/modules/caddytls"
+	"github.com/uptimerobot/caddy/v2"
+	"github.com/uptimerobot/caddy/v2/caddyconfig"
+	"github.com/uptimerobot/caddy/v2/caddyconfig/caddyfile"
+	"github.com/uptimerobot/caddy/v2/modules/caddytls"
 	"github.com/uptimerobot/certmagic"
 	"github.com/mholt/acmez/acme"
 )

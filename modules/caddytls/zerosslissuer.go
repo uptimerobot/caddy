@@ -25,8 +25,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/caddyserver/caddy/v2"
-	"github.com/caddyserver/caddy/v2/caddyconfig/caddyfile"
+	"github.com/uptimerobot/caddy/v2"
+	"github.com/uptimerobot/caddy/v2/caddyconfig/caddyfile"
 	"github.com/uptimerobot/certmagic"
 	"github.com/mholt/acmez/acme"
 	"go.uber.org/zap"

@@ -22,7 +22,7 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/caddyserver/caddy/v2"
+	"github.com/uptimerobot/caddy/v2"
 )
 
 func TestStaticResponseHandler(t *testing.T) {

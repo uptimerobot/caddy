@@ -25,8 +25,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/caddyserver/caddy/v2"
-	"github.com/caddyserver/caddy/v2/modules/caddytls"
+	"github.com/uptimerobot/caddy/v2"
+	"github.com/uptimerobot/caddy/v2/modules/caddytls"
 	"github.com/lucas-clemente/quic-go/http3"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
