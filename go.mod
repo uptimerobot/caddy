@@ -21,7 +21,7 @@ require (
 	github.com/smallstep/cli v0.15.2
 	github.com/smallstep/nosql v0.3.0 // cannot upgrade from v0.3.0 until protobuf warning is fixed
 	github.com/smallstep/truststore v0.9.6
-	github.com/uptimerobot/certmagic v0.12.9 // indirect
+	github.com/uptimerobot/certmagic v0.12.10 // indirect
 	github.com/yuin/goldmark v1.2.1
 	github.com/yuin/goldmark-highlighting v0.0.0-20200307114337-60d527fdb691
 	go.uber.org/zap v1.16.0
