@@ -20,9 +20,9 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/caddyserver/caddy/v2"
-	"github.com/caddyserver/certmagic"
 	"github.com/mholt/acmez"
+	"github.com/uptimerobot/caddy/v2"
+	"github.com/uptimerobot/certmagic"
 )
 
 // AutomationConfig governs the automated management of TLS certificates.

@@ -21,13 +21,13 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/caddyserver/certmagic"
+	"github.com/uptimerobot/certmagic"
 )
 
 // CustomCertSelectionPolicy represents a policy for selecting the certificate
 // used to complete a handshake when there may be multiple options. All fields
 // specified must match the candidate certificate for it to be chosen.
-// This was needed to solve https://github.com/caddyserver/caddy/issues/2588.
+// This was needed to solve https://github.com/uptimerobot/caddy/issues/2588.
 type CustomCertSelectionPolicy struct {
 	// The certificate must have one of these serial numbers.
 	SerialNumber []bigInt `json:"serial_number,omitempty"`

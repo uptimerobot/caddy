@@ -23,8 +23,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/caddyserver/caddy/v2"
-	"github.com/caddyserver/caddy/v2/modules/caddytls"
+	"github.com/uptimerobot/caddy/v2"
+	"github.com/uptimerobot/caddy/v2/modules/caddytls"
 	"github.com/lucas-clemente/quic-go/http3"
 	"go.uber.org/zap"
 	"golang.org/x/net/http2"
@@ -425,7 +425,7 @@ func (app *App) Stop() error {
 	}
 
 	// close the http3 servers; it's unclear whether the bug reported in
-	// https://github.com/caddyserver/caddy/pull/2727#issuecomment-526856566
+	// https://github.com/uptimerobot/caddy/pull/2727#issuecomment-526856566
 	// was ever truly fixed, since it seemed racey/nondeterministic; but
 	// recent tests in 2020 were unable to replicate the issue again after
 	// repeated attempts (the bug manifested after a config reload; i.e.

@@ -20,9 +20,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/caddyserver/caddy/v2"
-	"github.com/caddyserver/caddy/v2/modules/caddytls"
-	"github.com/caddyserver/certmagic"
+	"github.com/uptimerobot/caddy/v2"
+	"github.com/uptimerobot/caddy/v2/modules/caddytls"
+	"github.com/uptimerobot/certmagic"
 	"go.uber.org/zap"
 )
 
@@ -83,7 +83,7 @@ func (app *App) automaticHTTPSPhase1(ctx caddy.Context, repl *caddy.Replacer) er
 	// this maps domain names for automatic HTTP->HTTPS
 	// redirects to their destination server addresses
 	// (there might be more than 1 if bind is used; see
-	// https://github.com/caddyserver/caddy/issues/3443)
+	// https://github.com/uptimerobot/caddy/issues/3443)
 	redirDomains := make(map[string][]caddy.NetworkAddress)
 
 	for srvName, srv := range app.Servers {

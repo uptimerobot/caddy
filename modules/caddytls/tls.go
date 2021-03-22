@@ -28,8 +28,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/caddyserver/caddy/v2"
-	"github.com/caddyserver/certmagic"
+	"github.com/uptimerobot/caddy/v2"
+	"github.com/uptimerobot/certmagic"
 	"go.uber.org/zap"
 )
 
@@ -564,7 +564,7 @@ func (t *TLS) moveCertificates() error {
 			logger.Warn("certificate storage path has changed; attempting one-time auto-migration",
 				zap.String("old_folder", oldAcmeSitesDir),
 				zap.String("new_folder", newBaseDir),
-				zap.String("details", "https://github.com/caddyserver/caddy/issues/2955"))
+				zap.String("details", "https://github.com/uptimerobot/caddy/issues/2955"))
 		}
 
 		// for each site, move its folder and re-encode its metadata

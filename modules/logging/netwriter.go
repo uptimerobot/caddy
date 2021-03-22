@@ -20,8 +20,8 @@ import (
 	"net"
 	"sync"
 
-	"github.com/caddyserver/caddy/v2"
-	"github.com/caddyserver/caddy/v2/caddyconfig/caddyfile"
+	"github.com/uptimerobot/caddy/v2"
+	"github.com/uptimerobot/caddy/v2/caddyconfig/caddyfile"
 )
 
 func init() {

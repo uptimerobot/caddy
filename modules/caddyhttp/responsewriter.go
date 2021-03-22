@@ -124,7 +124,7 @@ type responseRecorder struct {
 // The header map is not buffered; i.e. the ResponseRecorder's Header()
 // method returns the same header map of the underlying ResponseWriter.
 // This is a crucial design decision to allow HTTP trailers to be
-// flushed properly (https://github.com/caddyserver/caddy/issues/3236).
+// flushed properly (https://github.com/uptimerobot/caddy/issues/3236).
 //
 // Once you are ready to write the response, there are two ways you can
 // do it. The easier way is to have the recorder do it:

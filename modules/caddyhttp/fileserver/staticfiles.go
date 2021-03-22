@@ -29,8 +29,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/caddyserver/caddy/v2"
-	"github.com/caddyserver/caddy/v2/modules/caddyhttp"
+	"github.com/uptimerobot/caddy/v2"
+	"github.com/uptimerobot/caddy/v2/modules/caddyhttp"
 	"go.uber.org/zap"
 )
 
@@ -220,7 +220,7 @@ func (fsrv *FileServer) ServeHTTP(w http.ResponseWriter, r *http.Request, next c
 	// if URL canonicalization is enabled, we need to enforce trailing
 	// slash convention: if a directory, trailing slash; if a file, no
 	// trailing slash - not enforcing this can break relative hrefs
-	// in HTML (see https://github.com/caddyserver/caddy/issues/2741)
+	// in HTML (see https://github.com/uptimerobot/caddy/issues/2741)
 	if fsrv.CanonicalURIs == nil || *fsrv.CanonicalURIs {
 		if implicitIndexFile && !strings.HasSuffix(r.URL.Path, "/") {
 			fsrv.logger.Debug("redirecting to canonical URI (adding trailing slash for directory)", zap.String("path", r.URL.Path))

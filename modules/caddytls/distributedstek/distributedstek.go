@@ -31,9 +31,9 @@ import (
 	"runtime/debug"
 	"time"
 
-	"github.com/caddyserver/caddy/v2"
-	"github.com/caddyserver/caddy/v2/modules/caddytls"
-	"github.com/caddyserver/certmagic"
+	"github.com/uptimerobot/caddy/v2"
+	"github.com/uptimerobot/caddy/v2/modules/caddytls"
+	"github.com/uptimerobot/certmagic"
 )
 
 func init() {

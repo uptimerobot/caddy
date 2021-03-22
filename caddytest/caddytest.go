@@ -21,11 +21,11 @@ import (
 	"time"
 
 	"github.com/aryann/difflib"
-	"github.com/caddyserver/caddy/v2/caddyconfig"
-	caddycmd "github.com/caddyserver/caddy/v2/cmd"
+	"github.com/uptimerobot/caddy/v2/caddyconfig"
+	caddycmd "github.com/uptimerobot/caddy/v2/cmd"
 
 	// plug in Caddy modules here
-	_ "github.com/caddyserver/caddy/v2/modules/standard"
+	_ "github.com/uptimerobot/caddy/v2/modules/standard"
 )
 
 // Defaults store any configuration required to make the tests run

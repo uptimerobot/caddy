@@ -1,4 +1,4 @@
-module github.com/caddyserver/caddy/v2
+module github.com/uptimerobot/caddy/v2
 
 go 1.14
 
@@ -6,7 +6,6 @@ require (
 	github.com/Masterminds/sprig/v3 v3.1.0
 	github.com/alecthomas/chroma v0.8.2
 	github.com/aryann/difflib v0.0.0-20170710044230-e206f873d14a
-	github.com/caddyserver/certmagic v0.12.1-0.20201215190346-201f83a06067
 	github.com/dustin/go-humanize v1.0.1-0.20200219035652-afde56e7acac
 	github.com/go-chi/chi v4.1.2+incompatible
 	github.com/google/cel-go v0.6.0
@@ -22,6 +21,7 @@ require (
 	github.com/smallstep/cli v0.15.2
 	github.com/smallstep/nosql v0.3.0 // cannot upgrade from v0.3.0 until protobuf warning is fixed
 	github.com/smallstep/truststore v0.9.6
+	github.com/uptimerobot/certmagic v0.12.9 // indirect
 	github.com/yuin/goldmark v1.2.1
 	github.com/yuin/goldmark-highlighting v0.0.0-20200307114337-60d527fdb691
 	go.uber.org/zap v1.16.0

@@ -10,7 +10,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/caddyserver/caddy/v2/caddytest"
+	"github.com/uptimerobot/caddy/v2/caddytest"
 )
 
 func TestSRVReverseProxy(t *testing.T) {
@@ -201,7 +201,7 @@ func TestReverseProxyWithPlaceholderDialAddress(t *testing.T) {
 								],
 								"handle": [
 									{
-	
+
 										"handler": "reverse_proxy",
 										"upstreams": [
 											{
@@ -284,7 +284,7 @@ func TestReverseProxyWithPlaceholderTCPDialAddress(t *testing.T) {
 								],
 								"handle": [
 									{
-	
+
 										"handler": "reverse_proxy",
 										"upstreams": [
 											{
@@ -370,7 +370,7 @@ func TestReverseProxyHealthCheck(t *testing.T) {
 	http://localhost:9080 {
 		reverse_proxy {
 			to localhost:2020
-	
+
 			health_path /health
 			health_port 2021
 			health_interval 2s
@@ -425,7 +425,7 @@ func TestReverseProxyHealthCheckUnixSocket(t *testing.T) {
 	http://localhost:9080 {
 		reverse_proxy {
 			to unix/%s
-	
+
 			health_path /health
 			health_port 2021
 			health_interval 2s

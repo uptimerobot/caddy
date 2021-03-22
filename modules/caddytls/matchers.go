@@ -17,8 +17,8 @@ package caddytls
 import (
 	"crypto/tls"
 
-	"github.com/caddyserver/caddy/v2"
-	"github.com/caddyserver/certmagic"
+	"github.com/uptimerobot/caddy/v2"
+	"github.com/uptimerobot/certmagic"
 )
 
 func init() {

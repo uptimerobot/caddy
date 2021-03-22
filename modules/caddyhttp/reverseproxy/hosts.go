@@ -22,8 +22,8 @@ import (
 	"strconv"
 	"sync/atomic"
 
-	"github.com/caddyserver/caddy/v2"
-	"github.com/caddyserver/caddy/v2/modules/caddyhttp"
+	"github.com/uptimerobot/caddy/v2"
+	"github.com/uptimerobot/caddy/v2/modules/caddyhttp"
 )
 
 // Host represents a remote host which can be proxied to.

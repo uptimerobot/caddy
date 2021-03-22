@@ -19,8 +19,8 @@ import (
 	"crypto/x509"
 	"fmt"
 
-	"github.com/caddyserver/certmagic"
 	"github.com/klauspost/cpuid/v2"
+	"github.com/uptimerobot/certmagic"
 )
 
 // CipherSuiteNameSupported returns true if name is
@@ -73,7 +73,7 @@ var defaultCipherSuitesWithoutAESNI = []uint16{
 // getOptimalDefaultCipherSuites returns an appropriate cipher
 // suite to use depending on the hardware support for AES.
 //
-// See https://github.com/caddyserver/caddy/issues/1674
+// See https://github.com/uptimerobot/caddy/issues/1674
 func getOptimalDefaultCipherSuites() []uint16 {
 	if cpuid.CPU.Supports(cpuid.AESNI) {
 		return defaultCipherSuitesWithAESNI
