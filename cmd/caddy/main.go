@@ -31,6 +31,7 @@ import (
 
 	// plug in Caddy modules here
 	_ "github.com/uptimerobot/caddy/v2/modules/standard"
+	_ "github.com/uptimerobot/caddy-ext/ratelimit"
 )
 
 func main() {
