@@ -4,9 +4,11 @@ go 1.16
 
 require (
 	github.com/Masterminds/sprig/v3 v3.2.2
+	github.com/RussellLuo/caddy-ext/ratelimit v0.0.0-20211107033507-ec2542243d48 // indirect
 	github.com/alecthomas/chroma v0.9.2
 	github.com/aryann/difflib v0.0.0-20210328193216-ff5ff6dc229b
 	github.com/caddyserver/certmagic v0.15.2
+	github.com/caddyserver/format-encoder v0.0.0-20211204173940-c07f2a45108f // indirect
 	github.com/dustin/go-humanize v1.0.1-0.20200219035652-afde56e7acac
 	github.com/go-chi/chi v4.1.2+incompatible
 	github.com/google/cel-go v0.7.3
@@ -37,3 +39,5 @@ require (
 // avoid license conflict from juju/ansiterm until https://github.com/manifoldco/promptui/pull/181
 // is merged or other dependency in path currently in violation fixes compliance
 replace github.com/manifoldco/promptui => github.com/nguyer/promptui v0.8.1-0.20210517132806-70ccd4709797
+
+replace github.com/caddyserver/certmagic => github.com/uptimerobot/certmagic v0.15.3
