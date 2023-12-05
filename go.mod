@@ -151,3 +151,5 @@ require (
 	gopkg.in/square/go-jose.v2 v2.6.0 // indirect
 	howett.net/plist v1.0.0 // indirect
 )
+
+replace github.com/caddyserver/certmagic => github.com/uptimerobot/certmagic v0.19.2
